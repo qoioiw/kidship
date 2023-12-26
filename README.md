@@ -1,30 +1,92 @@
-# React + TypeScript + Vite
+# Kidship（开发中）
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### 采用react+TypeScript+Vite开发
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+
+
+
+采用storybook 采取开发文档
+
+#### 目前以实现组件：
+
+1 AutoComplete:输入框自动完成功能
+
+2 Button:页面中最常用的的按钮元素，适合于完成特定的交互
+
+3 Form:表单组件
+
+4 Menu:为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
+
+5 Icon:提供了一套常用的图标集合 基于 react-fontawesome。
+
+6 Icon:Input 输入框 通过鼠标或键盘输入内容，是最基础的表单域的包装。
+
+7 Upload：通过点击或者拖拽上传文件
+
+#### 
+
+
+
+![image-20231226110430266](C:\Users\86198\AppData\Roaming\Typora\typora-user-images\image-20231226110430266.png)
+
+![image-20231226110457912](C:\Users\86198\AppData\Roaming\Typora\typora-user-images\image-20231226110457912.png)
+
+![image-20231226110832878](C:\Users\86198\AppData\Roaming\Typora\typora-user-images\image-20231226110832878.png)
+
+![image-20231226110842836](C:\Users\86198\AppData\Roaming\Typora\typora-user-images\image-20231226110842836.png)
+
+
+
+#### 安装
+
+```
+npm i kidship
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### 用法
+
+```
+import { Button } from 'kidship'
+
+<Button />
+```
+
+#### 加载样式
+
+```
+// 加载样式
+import 'vikingship/dist/index.css'
+```
+
+
+
+#### 本地运行storyBook
+
+```
+npm run storybook
+```
+
+
+
+#### 目前问题
+
+单元测试：出现问题
+
+打包发布StoryBook：出现问题
+
+
+
+#### 扩展功能： （日后实现）
+
+Alert：用于页面中展示重要的提示信息。 点击右侧的叉提示自动消失
+
+Tab:用于页面中展示重要的提示信息。 点击右侧的叉提示自动消失
+
+Select:用于页面中展示重要的提示信息。 点击右侧的叉提示自动消失
+
+可以采用Rollup:优化组件库打包后的体积
