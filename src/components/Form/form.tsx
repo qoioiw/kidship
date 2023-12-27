@@ -16,7 +16,7 @@ export interface FormProps {
 export type IFormContext = Pick<ReturnType<typeof useStore>,'dispatch'|'fields'|'validateField'> & Pick<FormProps, 'initialValues'>
 export const FormContext = createContext<IFormContext>({} as IFormContext)
 export type IFormRef = Omit<ReturnType<typeof useStore>, 'fields' | 'dispatch' | 'form'>
-export const Form: FC = forwardRef<HTMLFormElement,FormProps>((props,ref) => {
+export const Form: React.FC<FormProps> = forwardRef<HTMLFormElement,FormProps>((props,ref) => {
   const { name, children,initialValues, onFinishFailed ,onFinish} = props;
   const { form, fields, dispatch,...restProps} = useStore(initialValues)
   const { validateField, validateAllFields } = restProps
@@ -61,10 +61,10 @@ export const Form: FC = forwardRef<HTMLFormElement,FormProps>((props,ref) => {
       {childrenNode}
       </FormContext.Provider>  
     </form>
-    <div>
+    {/* <div>
       <pre style={{whiteSpace:'pre-wrap'}}>{JSON.stringify(fields)}</pre>
        <pre style={{whiteSpace:'pre-wrap'}}>{JSON.stringify(form)}</pre>
-      </div>
+      </div> */}
       </>
   );
 });

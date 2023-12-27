@@ -85,4 +85,4 @@ export const BasicForm = (args) => {
     </Form>
   )
 };
-BasicForm.storyName = "基本的登陆表单";
+BasicForm.storyName = "自定义规则，调用表单实例";

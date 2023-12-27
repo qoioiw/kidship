@@ -2,9 +2,9 @@
   "name": "kidship",
   "private": false,
   "version": "0.1.0",
-  "description":"React components library",
-  "author":"RunCai Yang",
-  "license":"MIT",
+  "description": "React components library",
+  "author": "RunCai Yang",
+  "license": "MIT",
   "type": "module",
   "keywords": [
     "Components",
@@ -18,12 +18,16 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "preview-storybook": "storybook-to-ghpages",
+    "storybook:build": "storybook build",
+    "storybook:publish": "pnpm storybook:build && echo. > ./storybook-static/.nojekyll && gh-pages -d ./storybook-static -t true"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.0",
     "@fortawesome/free-solid-svg-icons": "^6.5.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.2",
     "@types/classnames": "^2.3.1",
@@ -58,6 +62,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "eslint-plugin-storybook": "^0.6.15",
+    "gh-pages": "^6.1.1",
     "jest": "^29.7.0",
     "sass": "^1.69.5",
     "storybook": "^7.6.0",
