@@ -1,6 +1,0 @@
-import{j as d}from"./jsx-runtime-AgcCsxC8.js";import{c as p}from"./index-bittVVcR.js";const u=a=>{const{btnType:e,className:o,disabled:t,size:n,children:s,href:l,...r}=a,i=p("btn",o,{[`btn-${e}`]:e,[`btn-${n}`]:n,disabled:e==="link"&&t});return e==="link"&&l?d.jsx("a",{className:i,href:l,...r,children:s}):d.jsx("button",{className:i,disabled:t,...r,children:s})};u.defaultProps={disabled:!1,btnType:"default"};try{u.displayName="Button",u.__docgenInfo={description:`页面中最常用的的按钮元素，适合于完成特定的交互
-### 引用方法
-
-~~~js
-import { Button } from 'vikingship'
-~~~`,displayName:"Button",props:{className:{defaultValue:null,description:"设置 Button 的样式",name:"className",required:!1,type:{name:"string"}},disabled:{defaultValue:{value:"false"},description:"设置 Button 的禁用",name:"disabled",required:!1,type:{name:"boolean"}},size:{defaultValue:null,description:"设置 Button 的尺寸",name:"size",required:!1,type:{name:"enum",value:[{value:'"lg"'},{value:'"sm"'}]}},btnType:{defaultValue:{value:"default"},description:"设置 Button 的类型",name:"btnType",required:!1,type:{name:"enum",value:[{value:'"link"'},{value:'"primary"'},{value:'"default"'},{value:'"danger"'}]}},href:{defaultValue:null,description:"设置 Button 的链接",name:"href",required:!1,type:{name:"string"}}}}}catch{}export{u as B};

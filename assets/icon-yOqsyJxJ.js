@@ -9,4 +9,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
 ~~~js
 import { Icon } from 'vikingship'
-~~~`,displayName:"Icon",props:{theme:{defaultValue:null,description:"设置 icon 的主题",name:"theme",required:!1,type:{name:"enum",value:[{value:'"info"'},{value:'"warning"'},{value:'"primary"'},{value:'"danger"'},{value:'"secondary"'},{value:'"success"'},{value:'"light"'},{value:'"dark"'}]}}}}}catch{}export{S as I};
+~~~`,displayName:"Icon",props:{theme:{defaultValue:null,description:"设置 icon 的主题",name:"theme",required:!1,type:{name:"enum",value:[{value:'"primary"'},{value:'"secondary"'},{value:'"success"'},{value:'"info"'},{value:'"warning"'},{value:'"danger"'},{value:'"light"'},{value:'"dark"'}]}}}}}catch{}export{S as I};
